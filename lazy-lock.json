@@ -1,0 +1,5 @@
+{
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "neovim-ayu": { "branch": "master", "commit": "cc78e880cce5dfc1187d144ed7251c746feff259" },
+  "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" }
+}
