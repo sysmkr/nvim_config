@@ -32,3 +32,5 @@ require("lazy").setup({
         end,
     },
 })
+
+vim.cmd("hi Normal guibg=Black ctermbg=0")
