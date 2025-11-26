@@ -18,6 +18,10 @@ vim.opt.background = "dark"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+-- tab config
+vim.opt.tabstop = 4      -- Number of spaces a tab counts for
+vim.opt.shiftwidth = 4   -- Number of spaces for auto-indent
+vim.opt.expandtab = false -- Use real tabs, not spaces
 
 -- plugin setup
 require("lazy").setup({
