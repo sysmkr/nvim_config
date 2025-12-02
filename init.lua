@@ -32,9 +32,28 @@ require("lazy").setup({
                 mirage = false,
                 overrides = {},
             })
-            vim.cmd("colorscheme ayu")
+            -- vim.cmd("colorscheme ayu") -- Commented out to avoid auto-setting
+        end,
+    },
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            -- Optional configuration for tokionight
+            require("tokyonight").setup({
+                style = "night", -- or "storm", "moon", "day"
+                transparent = false,
+                terminal_colors = true,
+            })
+            -- vim.cmd("colorscheme tokyonight") -- Commented out to avoid auto-setting
         end,
     },
 })
 
+-- Set your preferred colorscheme here (uncomment one)
+-- vim.cmd("colorscheme ayu")
+vim.cmd("colorscheme tokyonight")
+
 vim.cmd("hi Normal guibg=Black ctermbg=0")
+
